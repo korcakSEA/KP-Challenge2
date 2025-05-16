@@ -24,20 +24,20 @@ body {
 }
 
 .container {
-  width: 80%;
-  max-width: 750px;
-  margin: 0 auto;
+  width: 100%; /* changed from 80% to 100% have the background extend from one side of the viewport to the other */
   background: #23424a;
   color: white;
   padding: 50px 0;
 }
 
-.intro-content {
-  width: 50%;
+.intro, .more-content{
+  max-width: 750px; /* limiting the more-content and intro */
+  width: 80%;
+  margin: 0 auto; /* and aligning them */
 }
 
-.more-content{
-  width: 80%;
-  max-width: 750px;
-  margin: 0 auto;
+.intro-content {
+  width: 50%; /* as usual taking 50% space of parent div */
 }
+
+
